@@ -1,0 +1,77 @@
+{
+	"docs": [{
+		"name": "base.fw.business.core.starter.UserService",
+		"summary": "用户业务中心",
+		"description": "处理用户相关逻辑",
+		"methods": [{
+				"name": "getUsersByName",
+				"summary": "根据姓名获取用户列表",
+				"description": "根据姓名获取用户列表",
+				"exceptionDescription": "异常描述",
+				"params": [{
+					"name": "name",
+					"type": "string",
+					"ref": [],
+					"description": "姓名",
+					"required": true,
+					"example": "张三"
+				}],
+				"response": {
+					"type": "base.fw.business.data.User",
+					"ref": ["base.fw.business.data.User"],
+					"description": "返回信息描述",
+					"example": "返回值示例"
+				},
+				"example": "调用参数示例"
+			},
+			{
+				"name": "addUsers",
+				"summary": "添加用户列表",
+				"description": "添加用户列表",
+				"exceptionDescription": "异常描述",
+				"params": [{
+					"name": "users",
+					"type": "List<base.fw.business.data.User>",
+					"ref": ["base.fw.business.data.User"],
+					"description": "用户信息",
+					"required": true,
+					"example": "示例"
+				}],
+				"response": {
+					"type": "void",
+					"ref": [],
+					"description": "无返回值",
+					"example": ""
+				},
+				"example": "调用参数示例"
+			}
+		]
+	}],
+	"objects": {
+		"base.fw.business.data.User": {
+			"description": "用户数据模型",
+			"fields": [{
+					"name": "name",
+					"type": "string",
+					"description": "姓名",
+					"required": true,
+					"example": "张三"
+				},
+				{
+					"name": "age",
+					"type": "int",
+					"description": "年龄",
+					"required": true,
+					"example": "20"
+				},
+				{
+					"name": "gender",
+					"type": "Enum",
+					"description": "性别",
+					"required": true,
+					"example": "MALE"
+				}
+			]
+		}
+	}
+}
