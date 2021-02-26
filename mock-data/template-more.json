@@ -72,6 +72,24 @@
 					"example": "MALE"
 				}
 			]
+		},
+		"base.fw.business.data.category": {
+			"description": "分类数据模型",
+			"fields": [{
+					"name": "id",
+					"type": "int",
+					"description": "ID",
+					"required": true,
+					"example": "1"
+				},
+				{
+					"name": "categoryName",
+					"type": "string",
+					"description": "名称",
+					"required": true,
+					"example": "行业动态"
+				}
+			]
 		}
 	}
 }
